@@ -1,0 +1,5 @@
+.*
+!.gitignore
+
+# Windows
+Thums.db

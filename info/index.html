@@ -2,21 +2,34 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADISURBVEhL7ZbBDsQgCET9cz9tD/2wLpXK2oEqu4GkhzUv0YGBuVpq8ilb8il7zQV1OKjDQf3hZQEeB6gPeNduAU4HVz1ZzYxmH4OYr2bE7Ka/PNsJMWu4pegvcsAukzvzIsDcTkUNj9FDm/tGoF3fDBwEBFxNSGQAtUakCH5pKdqlB7jtr/8SoIsEj/0DCLNI8JjZuslolxnAdUDq4CdGm7AImKBHNM8OIJYZjw8gaHASExDAcIzJGZAJ6nBQh5P/+T1/2Umn1jc0+swbHKrn+gAAAABJRU5ErkJggg==">
 <style type="text/css"><!--
-html {}
-body {text-align: center; background: linear-gradient(126deg,#F00,#FB4 4%,#FB4 84%,#FF0,#0FF,#F0F,#F00);}
+html,body {width:100%; height:100%; margin: 0; text-align: center; }
 div {font-family: meiryo, sans-serif; font-size: 14px; font-weight: normal; margin: 0; padding: 0; border: 0 #00C solid; display: inline-block; text-align: left;}
-div#container { width: 70%; margin: 0 auto; background: #FDA;min-height: calc(100vh - 50px)}
+#wrapper {position: relative; width: 100%; height: auto !important; height:100%; min-height: 100%; text-align: center; background: linear-gradient(126deg,#F00,#FB4 4%,#FB4 84%,#FF0,#0FF,#F0F,#F00);}
+#container {width: 70%; height:100%; margin: 0 auto; background: #FDA; padding-bottom: 30px;}
 #boxA { width: 98%; padding:0 1%; background: linear-gradient(138deg,#F00,#FB4 4%,#FB4 50%,#FF0,#0FF,#F0F,#F00);color: #FFF;font-weight: bold;}
-#boxB { width: 88%; padding:0 2%; margin:0 4%;float:left; border-left:1px #DCC dashed; background: #FFF;}
-#boxC { width: 20%; height: 100%; margin: 0 auto; float:left;}
-#boxE { width: 96%; padding:0 2%; clear: left; background: #CFF;font-weight: bold;}
-a {color: #000; padding:0; display: block; text-decoration: none;} a:visited { color: #000; }
-a.wd {padding: 0em 0.5em; display: inline; width: 100%;} a:hover {background-color: #F83; color: #FFF;}
+#boxB { width: 88%; padding:0 2%; margin:0 2%;float:left; border:1px #DCC dashed; background: #FFF; }
+#boxC { width: 1%; margin: 0 auto; float:left;}
+#boxE { width: 96%; margin: 0 ; padding: 0;}
+#footer {position: absolute; bottom: 0; width:100%; height: 30px; background: #FFF; line-height: 120%; clear:both;display:block; }
+a {color: #000; padding:2px; display: block; text-decoration: none;}
+a:visited { color: #000; }
+a.wd {padding: 0.2em 0 ; display: block; width: 100%; text-align: center; font-size:16px;}
+a:hover {background-color: #F83; color: #FFF;}
 h3 {font-size: midium; font-weight: bold; padding: 0; line-height: 0%;}
 p {font-size: midium; padding: 8px 2em; line-height: 0%;}
-footer {width:100%; height: 30px;background:#FFF;line-height: 200%;}
+.grad-btn {/*.grad-btnのCSSは表示/非表示の動作には関係ないので、ご自由にどうぞ。*/}
+.grad-btn::before {content: "続きを読む"}
+.grad-item {position: relative; overflow: hidden; height: 2em; /*隠した状態の高さ*/}
+.grad-item::before {display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 40px; /*グラデーションで隠す高さ*/
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+  content: "";}
+.grad-trigger {display: none; /*チェックボックスは常に非表示*/}
+.grad-trigger:checked ~ .grad-btn::before {content: "閉じる" /*チェックされていたら、文言を変更する*/}
+.grad-trigger:checked ~ .grad-item {height: auto; /*チェックされていたら、高さを戻す*/}
+.grad-trigger:checked ~ .grad-item::before {display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/}
 --></style></head><TITLE>info : Fluid-Lullers</TITLE>
-<body><div id="container">
+<body><div id="wrapper"><div id="container">
 
 <div id="boxA"><p>Fluid-Lullers</p></div>
 
@@ -29,22 +42,23 @@ footer {width:100%; height: 30px;background:#FFF;line-height: 200%;}
 ・　→<a>到着状況一覧</a><br>
 <br>
 <br>
+<div class="grad-wrap"><input id="trigger1" class="grad-trigger" type="checkbox">
+<label class="grad-btn" for="trigger1"></label>
+<div class="grad-item">ここに隠したい文章を書くよ<br>ここに隠したい文章を書くよ<br>ここに隠したい文章を書くよ<br>ここに隠したい文章を書くよ<br></div></input></div>
+
 ・PCでのシリアル・モデル番号表示方法<br>
 cmd /k wmic csproduct get identifyingnumber,name<br>
 ↑の行番号をクリック　→　[Ctrl]＋C　→　[Win]＋R　→　[Ctrl]＋V　→　[Enter]　→　表示結果２個<br>
 <br>
-<br>
+<br><br>
 (備考)<br>
 ※　~年/月/日は、表示予定期間を示しています。<br>
 <br>
 <br><br>
 </div><!-- boxB左 -->
 
-<div id="boxC"><!-- boxC右 -->
-<p>aaaa</p>
-</div><!-- boxC右 -->
-
-<div id="boxE"><!-- footer --></div>
+<div id="boxC"><!-- boxC右 --></div><!-- boxC右 -->
+<div id="boxE"></div>
 </div>
-</div><footer><a href="#">Go to Top</a></footer>
-</body></html>
+<div id="footer"><a class="wd" href="#">▲ Top ▲</a></div>
+</div></body></html>

@@ -1,23 +1,29 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+﻿<!DOCTYPE html>
+<html lang="ja"><head><meta charset=utf-8">
 <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADISURBVEhL7ZbBDsQgCET9cz9tD/2wLpXK2oEqu4GkhzUv0YGBuVpq8ilb8il7zQV1OKjDQf3hZQEeB6gPeNduAU4HVz1ZzYxmH4OYr2bE7Ka/PNsJMWu4pegvcsAukzvzIsDcTkUNj9FDm/tGoF3fDBwEBFxNSGQAtUakCH5pKdqlB7jtr/8SoIsEj/0DCLNI8JjZuslolxnAdUDq4CdGm7AImKBHNM8OIJYZjw8gaHASExDAcIzJGZAJ6nBQh5P/+T1/2Umn1jc0+swbHKrn+gAAAABJRU5ErkJggg==">
+<link rel="stylesheet" type="text/css" href="./css/reset.css">
 <link rel="stylesheet" type="text/css" href="./css/info.css">
-<style type="text/css"><!--
---></style></head><TITLE>info : Fluid-Lullers</TITLE>
+<title>info : Fluid-Lullers</TITLE></head>
 <body><div id="wrapper"><div id="boxA">Fluid-Lullers</div><div id="container">
 
-
-
 <div id="boxB"><!-- boxB左 --><H3>Info</H3><hr>
-<a href="./items.html" target="_blank">[到着状況一覧] →一覧ページで見る</a>
-<iframe src="./items.html#n1" width="1050px" height="130px" frameborder="0" scrolling="yes" style="-o-transform:scale(0.85);
--webkit-transform:scale(0.85);-moz-transform:scale(0.85);-ms-transform:scale(0.85);transform-origin:0 0;-o-transform-origin:0 0;-webkit-transform-origin:0 0;-moz-transform-origin:0 0;-ms-transform-origin:0 0;">
+<a href="./items.html" target="_blank">[到着状況一覧] →一覧ページで見る</a><br>
+<iframe class="small" src="./items.html#n1" width="1050px" height="130px" frameborder="0">
 </iframe>
 <hr>
-・PCでのシリアル・モデル番号表示方法<br>
-cmd /k wmic csproduct get identifyingnumber,name<br>
-↑の行番号をクリック　→　[Ctrl]＋C　→　[Win]＋R　→　[Ctrl]＋V　→　[Enter]　→　表示結果２個<br>
-<br>
+<span class="bold">PCでのシリアル・モデル番号表示方法</span><br>
+<textarea class="rowcol" onclick="this.select();">cmd /k wmic csproduct get identifyingnumber,name</textarea><br>
+1. 上記の文字を選択 / 2. [右クリック]して、[コピー]をクリック<br>
+3. [Windowsキー]を押しながら、[R]のキーを押す ※[ファイル名を指定して実行] ダイアログ ボックスが開く<br>
+4. [ファイル名を指定して実行]内の入力欄で[右クリック]して、[貼り付け]をクリック ※文字を貼り付ける<br>
+5. [OK]をクリック ※コマンドプロンプトが表示される。<br>
+6. 表示内容<br>
+<div class="black">
+IdentifyingNumber  Name　<br>
+●●●●●　　　 　△△△△△　<br>
+</div><div>
+　●●●●●部→「シリアル番号」<br>　△△△△△部→「モデル番号」<br></div>
+<br><br>
 <hr>
 <br>
 <a href="#">↑ Top</a>

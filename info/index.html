@@ -4,9 +4,9 @@
 <link rel="stylesheet" type="text/css" href="./css/reset.css">
 <link rel="stylesheet" type="text/css" href="./css/info.css">
 <title>info : Fluid-Lullers</TITLE></head>
-<body><header></header>
+<body>
 <div id="wrapper"><div id="boxA">Fluid-Lullers</div><div id="container">
-<div id="boxB"><!-- boxB左 --><br><h3>Info</h3><hr>
+<div id="boxB"><br><h3>Info</h3><hr>
 <span class="bold">到着状況一覧</span>　 <a href="./items.html" target="_blank">[別ページで一覧を見る]</a><br>
 <iframe class="small" src="./items.html" width="1050px" height="120px" frameborder="1">
 </iframe>
@@ -18,12 +18,16 @@
 4. [ファイル名を指定して実行]内の入力欄で[右クリック]して、[貼り付け]をクリック ※文字を貼り付ける<br>
 5. [OK]をクリック ※コマンドプロンプトが表示される。<br>
 6. 表示内容<br>
-<div class="black">
-IdentifyingNumber  Name　<br>
-●●●●●　　　 　△△△△△　<br>
-</div><div>
-　●●●●●部→「シリアル番号」<br>　△△△△△部→「モデル番号」<br></div>
-<br><br>
+<div class="bg_border"><div class="black">
+<pre>IdentifyingNumber　Name　
+●●●●●　　　 　△△△△△</pre></div><div>
+　●●●●●部→「シリアル番号」<br>　△△△△△部→「モデル番号」<br></div></div><br>
+※ ●●●●●部に「シリアル番号」だけ表示されない場合のみ以下も行う (PCによって異なるため)<br>
+7. 以下の文字を選択 / 8.上記手順(2)～(5)を行う。 ※SerialNumberの下部が「シリアル番号」<br>
+<textarea class="rowcol" onclick="this.select();">cmd /k wmic baseboard get serialnumber</textarea><br>
+9. 以下の文字を選択 / 10.上記手順(2)～(5)を行う。 ※SerialNumberの下部が「シリアル番号」<br>
+<textarea class="rowcol" onclick="this.select();">cmd /k wmic bios get serialnumber</textarea><br>
+<br>
 <hr>
 <br><br><br>
 <a href="#">↑ Top</a>

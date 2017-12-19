@@ -1,47 +1,36 @@
 ﻿@charset "utf-8";
 
-html,body {width:100%; height:100%; margin: 0; text-align: center;}
-div {font-family: meiryo, sans-serif; font-size: 14px; font-weight: normal; margin: 0; padding: 0; border: 0 #5F5F5F solid; display: inline-block; text-align: left;line-height: 200%}
-#wrapper {position: relative; width: 100%; height: auto !important; height:100%; min-height: 100%; text-align: center; background: linear-gradient(126deg,#F25F5F,#F2A85F 4%,#F2A85F 84%,#F2F25F,#5FF2F2,#F25FF2,#F25F5F);}
-#container {width: 1050px; height:100%; margin: 0 auto; background: rgba(255,255,255,0.3);}
-#boxA {width: 98%; padding:0.3% 1%; background: linear-gradient(138deg,#F25F5F,#F2A85F 4%,#F2A85F 84%,#F2F25F,#5FF2F2,#F25FF2,#F25F5F);color: #F2F2A8;font-weight: bold; font-size:16px;border-bottom:2px #5F5FF2 solid;}
-#boxB {width: 88%; padding:0 1.5%; margin:0 4.5%;float:left; border:0 #A8A8A8 solid; background: #FFF;padding-bottom: 60px;}
-#boxC {width: 0%; margin: 0 auto; }
-#boxE {width: 96%; margin: 0 ; padding: 0;}
-#footer {position: absolute; bottom: 0; width:100%; height: 30px;padding:5px 0; background: #C1C1C1; clear:both; display:block;border-top:2px #F25F5F solid;}
-a {color: #00F; padding:0px; display: inline:block; border-bottom:1px #00F solid;text-decoration: none;line-height: 150%}
-a:visited { color: #00F; }
-a.wd {color: #000;padding: 5px 0 ; display: block; width: 100%; text-align: center; font-size:16px;line-height: 150%}
-a:hover {background-color: rgba(0,127,255,0.8);; color: #FFF;}
-h3 {font-size: 20px; font-weight: bold; margin:3px 0;padding: 6px 0; line-height: 50%;}
-p {font-size: midium; padding: 8px 2em; line-height: 0%;}
-div.grad-wrap {display:block;}
-.rowcol {padding: 2px 7px;width: 50%; height: 22px; resize: none;}
+html,body {width: 100%;height: 100%;margin: 0;text-align: center;}
+div {font-family: meiryo, sans-serif;font-size: 14px;font-weight: normal;margin: 0;padding: 0;border: 0 #5F5F5F solid;display: inline-block;text-align: left;line-height: 200%}
+#wrapper {position: relative;width: 100%;height: auto !important;height: 100%;min-height: 100%;text-align: center;background: linear-gradient(126deg,#F25F5F,#F2A85F 4%,#F2A85F 84%,#F2F25F,#5FF2F2,#F25FF2,#F25F5F);}
+#container {width: 1050px;height: 100%;margin: 0 auto;background: rgba(255,255,255,0.3);}
+#boxA {width: 98%;padding: 0.3% 1%;background: linear-gradient(138deg,#F25F5F,#F2A85F 4%,#F2A85F 84%,#F2F25F,#5FF2F2,#F25FF2,#F25F5F);color: #F2F2A8;font-weight: bold;font-size: 16px;border-bottom: 2px #5F5FF2 solid;}
+#boxB {width: 88%;padding: 0 1.5%;margin: 0 4.5%;float: left;border: 0 #A8A8A8 solid;background: #FFF;padding-bottom: 60px;}
+#boxC {width: 0%;margin: 0 auto;}
+#boxE {width: 96%;margin: 0 ;padding: 0;}
+#footer {position: absolute;bottom: 0;width: 100%;height: 30px;padding: 5px 0;background: #C1C1C1;clear: both;display: block;border-top: 2px #F25F5F solid;}
+a {color: #00F;padding: 0px;display: inline: block;border-bottom: 1px #00F solid;text-decoration: none;line-height: 150%}
+a: visited { color: #00F;}
+a.wd {color: #000;padding: 5px 0 ;display: block;width: 100%;text-align: center;font-size: 16px;line-height: 150%}
+a: hover {background-color: rgba(0,127,255,0.8);;color: #FFF;}
+h3 {font-size: 20px;font-weight: bold;margin: 3px 0;padding: 6px 0;line-height: 50%;}
+p {font-size: midium;padding: 8px 2em;line-height: 0%;}
+.bg_border {margin: 2px 1em;padding: 5px;border: 1px #000 solid;}
+.black {margin: 0 0 0 1em;padding: 5px;background: #000;color: #FFF;}
 .bold {font-weight: bold;}
+.rowcol {padding: 2px 7px;width: 50%;height: 22px;resize: none;}
 iframe {
 margin: 0 5px;
 overflow-y: scroll;
 scrolling: yes;
 transform: scale(.75);
 -moz-transform: scale(.85);
--webkit-transform: scale(.85);
--o-transform: scale(.85);
 -ms-transform: scale(.85);
+-o-transform: scale(.85);
+-webkit-transform: scale(.85);
 transform-origin: 0 0;
+-moz-transform-origin: 0 0;
+-ms-transform-origin: 0 0;
 -o-transform-origin: 0 0;
 -webkit-transform-origin: 0 0;
--moz-transform-origin: 0 0;
--ms-transform-origin:0 0;
 }
-.grad-btn {/*.grad-btnのCSSは表示/非表示の動作には関係ないので、ご自由にどうぞ。*/}
-.grad-btn::before {content: "▼続きを表示▼";}
-.grad-item {position: relative; overflow: hidden; height: 2em;  /*隠した状態の高さ*/}
-.grad-item::before {display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 0px; /*グラデーションで隠す高さ*/
-  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
-  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
-  content: "";}
-.grad-trigger {display: none; /*チェックボックスは常に非表示*/}
-.grad-trigger:checked ~ .grad-btn::before {content: "▲閉じる▲" /*チェックされていたら、文言を変更する*/}
-.grad-trigger:checked ~ .grad-item {height: auto; /*チェックされていたら、高さを戻す*/}
-.grad-trigger:checked ~ .grad-item::before {display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/}
-.black {margin: 0 0 0 1em;padding: 2px; background: #000; color: #FFF;}

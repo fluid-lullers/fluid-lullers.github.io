@@ -1,13 +1,17 @@
-﻿@charset "UTF-8";
+﻿@charset "utf-8";
 
-html,body {width:100%; height:95%; margin: 0; text-align: center; }
-div {width:950px;font-family: meiryo, sans-serif; font-size: 14px; font-weight:
- normal; margin: 10px auto; padding: 20px; border: 0;text-align: left;}
-table,td,th {border:1px #5F5F5F solid;border-collapse: collapse;}
-p {font-weight:bold;line-height: 0%;}
-.ft{font-weight:bold;}
-div.table {text-align: center;}
-td {text-align: left; padding:5px 14px;}
-th {text-align: center; padding:5px; background-color:#A8F25F;}
+html,body {width: 100%;height: 95%;margin: 0;text-align: center;}
+div {width: 950px;font-family: meiryo, sans-serif;font-size: 14px;font-weight: normal;
+     margin: 10px auto;padding: 20px;border: 0;text-align: left;}
+p {font-weight: bold;line-height: 0%;}
 span {display: inline-block;}
+table,td,th {border: 1px #5F5F5F solid;border-collapse: collapse;}
+td {text-align: left;padding: 5px 14px;}
+th {text-align: center;padding: 5px;background-color: #A8F25F;}
+div.table {text-align: center;}
+.ft{font-weight: bold;}
+.wid1 {width: 100px;}
+.wid2 {width: 500px;}
+.wid3 {width: 70px;}
+.wid4 {width: 300px;}
 

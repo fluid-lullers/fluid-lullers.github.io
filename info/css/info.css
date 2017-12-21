@@ -74,6 +74,7 @@ font-size: 16px;
 line-height: 150%;
 }
 a:hover {
+
 background-color: rgba(0, 127, 255, 0.8);
 color: #FFF;
 }
@@ -104,6 +105,7 @@ color: #FFF;
 font-weight: bold;
 }
 .rowcol {
+cursor: pointer;
 padding: 2px 7px;
 width: 50%;
 height: 22px;
@@ -116,36 +118,36 @@ overflow-y: scroll;
 transform: scale(0.75);
 transform-origin: 0 0;
 }
-.menu {}
 .menu label {
-    background: #FFF;
-    border: 1px #AAA solid;
-    color: #00F;
-    cursor: pointer;
-    padding: 2px;
-    z-index: 20;
-    display: inline-block;
-    line-height: 26px;
-    font-size: 16px;
+background: #FFF;
+border: 1px #00F dashed;
+color: #00F;
+cursor: pointer;
+padding: 3px;
+z-index: 20;
+display: inline-block;
+line-height: 150%;
+font-size: 14px;
 }
 .menu label:hover{
     background-color: rgba(0, 127, 255, 0.8);
+    color: #FFF;
 }
 
-label:after {
-    content: "▼続きを読む▼";
+label::after {
+    content: "＋ 続きを開く";
 }
 
 .menu input[type="checkbox"].on-off{
     display: none;
 }
-input[type="checkbox"].on-off:checked + ul{
+input[type="checkbox"].on-off:checked + label + ul {
     height: 100%;
 }
-input:checked + label:after{
-    content:"AA";
-}
-input[type="checkbox"].on-off + ul{
+input[type="checkbox"].on-off + label + ul {
     height: 0;
     overflow: hidden;
+}
+input.on-off:checked + label::after {
+    content:"－ 閉じる";
 }

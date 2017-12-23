@@ -104,12 +104,16 @@ color: #FFF;
 font-weight: bold;
 }
 .rowcol {
+color: #000;
 cursor: pointer;
 padding: 2px 7px;
 width: 50%;
 height: 22px;
 overflow: hidden;
 resize: none;
+}
+.rowcol:hover {
+background-color: #CEF;
 }
 iframe {
 border: #000 solid 1px;

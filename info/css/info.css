@@ -74,8 +74,7 @@ font-size: 16px;
 line-height: 150%;
 }
 a:hover {
-
-background-color: rgba(0, 127, 255, 0.8);
+background-color: #39F;
 color: #FFF;
 }
 h3 {
@@ -131,7 +130,7 @@ line-height: 150%;
 font-size: 14px;
 }
 .menu label:hover{
-    background-color: rgba(0, 127, 255, 0.8);
+    background-color: #39F;
     color: #FFF;
 }
 

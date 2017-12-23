@@ -152,7 +152,7 @@ input.on-off:checked + label::after {
     content:"－ 閉じる";
 }
 @media screen and (max-width: 980px;) {
-html {width: 95%; height: auto; -webkit-text-size-adjust: none;}
+html {width: 95%;max-width: 100%; height: auto; -webkit-text-size-adjust: none;}
 body, #wrapper {overflow: hidden;width: 90%; height: auto;}
 #container {width: auto;}
 #boxA, #footer {width: 60%; height: auto;}

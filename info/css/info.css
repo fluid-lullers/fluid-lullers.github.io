@@ -152,9 +152,9 @@ input.on-off:checked + label::after {
     content:"－ 閉じる";
 }
 @media screen and (max-width: 980px;) {
-html {width: 95%;max-width: 100%; height: auto; -webkit-text-size-adjust: none;}
-body, #wrapper {overflow: hidden;width: 90%; height: auto; -webkit-text-size-adjust: 100%;}
-#container {box-sizing: border-box;width: auto;word-break: break-all;}
+html {width: 95%;max-width: 98%; height: auto; -webkit-text-size-adjust: none;}
+body, #wrapper {width: 90%; height: auto; -webkit-text-size-adjust: 100%;}
+#container {width: 85%;box-sizing: border-box;word-break: break-all;}
 #boxA, #footer {width: 60%; height: auto;}
 #boxB, #boxC, #boxE {width: 60%; height: auto;}
 }

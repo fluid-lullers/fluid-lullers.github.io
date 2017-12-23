@@ -110,6 +110,7 @@ width: 50%;
 height: 22px;
 overflow: hidden;
 resize: none;
+-moz-user-select: all;
 }
 .rowcol:hover {
 background-color: #CEF;

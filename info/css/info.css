@@ -114,15 +114,6 @@ resize: none;
 .rowcol:hover {
 background-color: #CEF;
 }
-::selection {
-background-color: #39F;
-color: #fff;
-}
-::-moz-selection {
-background-color: #39F;
-color: #fff;
-}
-
 iframe {
 border: #000 solid 1px;
 margin: 0 5px;

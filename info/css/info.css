@@ -156,7 +156,7 @@ input.on-off:checked + label::after {
 html {width: 95%;max-width: 98%; height: auto;}
 body, #wrapper {width: 90%; height: auto; -webkit-text-size-adjust: 100%;}
 div {max-width: 95%;word-break: break-all;overflow-x: auto;}
-#container {width: 85%;box-sizing: border-box;word-break: break-all;}
-#boxA, #footer {width: 60%; height: auto;}
+#container {width: 85%;box-sizing: border-box;word-break: break-all;overflow-x: auto;}
+#boxA, #footer {width: 60%; height: auto;position: relative;}
 #boxB, #boxC, #boxE {width: 60%; height: auto;}
 }

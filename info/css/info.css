@@ -153,11 +153,8 @@ input.on-off:checked + label::after {
 }
 @media screen and (max-width: 980px;) {
 html {width: 700px; height: auto; -webkit-text-size-adjust: none;}
-body, #wrapper {overflow: hidden;width: 758px; height: auto;}
-iframe {overflow-x: hidden;}
+body, #wrapper {overflow: hidden;width: 90%; height: auto;}
 #container {width: auto;}
 #boxA, #footer {width: 60%; height: auto;}
 #boxB, #boxC, #boxE {width: 60%; height: auto;}
-div {font: normal 10px meiryo, sans-serif;}
-h3 {font: normal 10px meiryo, sans-serif;}
 }

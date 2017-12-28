@@ -1,156 +1,78 @@
 ﻿@charset "utf-8";
 
-html, body {width: 100%;height: 100%;margin: 0;text-align: center;}
-div {font: normal 16px meiryo, sans-serif;margin: 0;padding: 0;border: #5F5F5F solid 0;
-  display: inline-block;text-align: left;line-height: 200%;}
-#wrapper {overflow: hidden;position: relative;width: 100%;height: auto !important ;
-height: 100%;
-min-height: 100%;
-text-align: center;
-background: linear-gradient(126deg, #F25F5F, #F2A85F 4%, #F2A85F 84%, #F2F25F, #5FF2F2, #F25FF2, #F25F5F);
-}
+html, body {
+  width: 100%;height: 100%;margin: 0;text-align: center;word-break: break-word;overflow-wrap: break-word;}
+div {
+  font: normal 15px meiryo, sans-serif;margin: 0;padding: 0;border: #5F5F5F solid 0;
+  display: inline-block;text-align: left;letter-spacing: .08rem;line-height: 1.84;}
+#wrapper {
+  background: linear-gradient(126deg, #F25F5F, #F2A85F 4%, #F2A85F 84%, #F2F25F, #5FF2F2, #F25FF2, #F25F5F);
+  height: auto !important ;height: 100%;overflow: hidden;position: relative;width: 100%;min-height: 100%;
+  text-align: center;}
 #container {
-width: 1050px;
-height: 100%;
-margin: 0 auto;
-background: rgba(255, 255, 255, 0.3);
-}
+  width: 1050px;height: 100%;margin: 0 auto;background: rgba(255, 255, 255, 0.3);}
 #boxA {
-width: 98%;
-padding: 0.3% 1%;
-background: linear-gradient(138deg, #F25F5F, #F2A85F 4%, #F2A85F 84%, #F2F25F, #5FF2F2, #F25FF2, #F25F5F);
-color: #F2F2A8;
-font-weight: bold;
-font-size: 16px;
-border-bottom: 2px solid #5F5FF2;
-}
+  color: #F2F2A8;font-weight: bold;font-size: 16px;border-bottom: 2px solid #5F5FF2;width: 98%;padding: 0.3% 1%;
+  background: linear-gradient(138deg, #F25F5F, #F2A85F 4%, #F2A85F 84%, #F2F25F, #5FF2F2, #F25FF2, #F25F5F);}
 #boxB {
-width: 88%;
-padding: 0 1.5%;
-margin: 0 4.5%;
-float: left;
-border: #A8A8A8 solid 0;
-background: #FFF;
-padding-bottom: 60px;
-}
+  width: 88%;padding: 0 1.5%;margin: 0 4.5%;float: left;border: #A8A8A8 solid 0;background: #FFFEF0;
+  padding-bottom: 60px;}
 #boxC {
-width: 0%;
-margin: 0 auto;
-}
+  width: 0%;margin: 0 auto;}
 #boxE {
-width: 96%;
-margin: 0;
-padding: 0;
-}
+  width: 96%;margin: 0;padding: 0;}
 #footer {
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 30px;
-padding: 5px 0;
-background: #C1C1C1;
-clear: both;
-display: block;
-border-top: 2px solid #F25F5F;
-}
+  position: absolute;bottom: 0;width: 100%;height: 30px;padding: 5px 0;background: #C1C1C1;clear: both;
+  display: block;border-top: 2px solid #F25F5F;}
 a {
-color: #00F;
-padding: 0;
-display: inline-block;
-border-bottom: 1px solid #00F;
-text-decoration: none;
-line-height: 150%;
-}
+  color: #00F;padding: 0;display: inline-block;border-bottom: 1px solid #00F;text-decoration: none;
+  line-height: 1.5;}
 a:visited {
-color: #00F;
-}
+  color: #00F;}
 a.wd {
-color: #000;
-padding: 5px 0;
-display: block;
-width: 100%;
-text-align: center;
-font-size: 16px;
-line-height: 150%;
-}
+  color: #000;padding: 5px 0;display: block;width: 100%;text-align: center;font-size: 16px;line-height: 1.5;}
 a:hover {
-background-color: #39F;
-color: #FFF;
-}
+  background-color: #39F;color: #FFF;}
 h3 {
-font-size: 20px;
-font-weight: bold;
-margin: 3px 0;
-padding: 6px 0;
-line-height: 50%;
-}
+  font: bold 18px meiryo, sans-serif;margin: .5rem 0;}
+hr {
+  margin: 0;padding: .8rem 0 0 0;}
+ul, li{
+  list-style-type: none;}
 p {
-font-size: medium;
-padding: 8px 2em;
-line-height: 0%;
-}
+  font-size: medium;padding: 8px 2rem;letter-spacing: .03rem;line-height: 0;}
 .bg_border {
-margin: 2px 1em;
-padding: 5px;
-border: #000 solid 1px;
-}
+  border: #000 solid 1px;margin: 2px .2rem;padding: .2rem .1rem;}
 .black {
-margin: 0 0 0 1em;
-padding: 5px;
-background: #000;
-color: #FFF;
-}
-.bold {
-font-weight: bold;
-}
+  background: #222;color: #FFF;letter-spacing: 0;margin: 4px;padding: 7px;}
+.blt {width: 90%;
+  border-bottom: 1px solid #AAA;border-left: 3px solid #5FF25F;border-top: 1px solid #555;display: block;
+  font-weight: bold;line-height: .8;margin: 1rem 0;padding: .5rem;}
+.txt {
+  margin: 0 1rem;width: 40rem;}
+.narrow {
+  display: block;font-size: 3px;padding: 0;}
 .rowcol {
-cursor: pointer;
-padding: 2px 7px;
-width: 50%;
-height: 22px;
-overflow: hidden;
-resize: none;
-}
+  background: #FFFEFE;cursor: pointer;letter-spacing: .03rem; margin: 0 1rem;
+  padding: 2px 7px;width: 35rem;height: 22px;overflow: hidden;resize: none;}
 .rowcol:hover {
-background-color: #CEF;
-}
+  background-color: #CEF;}
+.small {
+  width: 870px;height: 100px;overflow: hidden;}
 iframe {
-border: #000 solid 1px;
-margin: 0 5px;
-overflow-y: scroll;
-transform: scale(0.75);
-transform-origin: 0 0;
-}
-.menu label {
-background: #FFF;
-border: 1px #00F dashed;
-color: #00F;
-cursor: pointer;
-padding: 3px;
-z-index: 20;
-display: inline-block;
-line-height: 150%;
-font-size: 14px;
-}
-.menu label:hover{
-    background-color: #39F;
-    color: #FFF;
-}
-
+  border: #000 solid 1px;margin: 8px 5px;overflow-y: scroll;transform: scale(.8);transform-origin: 0 0;}
 label::after {
-    content: "＋ 続きを開く";
-}
-
+  content: "＋ 続きを開く";}
+.menu label {
+  border: 1px #00F dashed;color: #00F;cursor: pointer;padding: 3px;z-index: 20;display: inline-block;
+  line-height: 1.5;font-size: 14px;}
+.menu label:hover{
+  background-color: #39F;color: #FFF;}
 .menu input[type="checkbox"].on-off{
-    display: none;
-}
+  display: none;}
 input[type="checkbox"].on-off:checked + label + ul {
-    height: 100%;
-}
+  height: 100%;}
 input[type="checkbox"].on-off + label + ul {
-    height: 0;
-    overflow: hidden;
-}
+  height: 0;overflow: hidden;}
 input.on-off:checked + label::after {
-    content:"－ 閉じる";
-}
+  content:"－ 閉じる";}

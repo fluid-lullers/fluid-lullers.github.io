@@ -20,11 +20,11 @@ div.table {
 .ft{
   font-weight: bold;}
 .wid1 {
-  width: 100px;}
+  white-space: nowrap;width: 100px;}
 .wid2 {
   width: 28rem;}
 .wid3 {
-  width: 70px;}
+  white-space: nowrap;width: 70px;}
 .wid4 {
   width: 18rem;}
 

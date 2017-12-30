@@ -14,17 +14,17 @@ table,td,th {
 td {
   text-align: left;padding: .2rem 1rem;}
 th {
-  text-align: center;padding: .2rem .8rem;background-color: #A8F25F;}
+  text-align: center;padding: .2rem .8rem;background-color: #A8F25F;white-space: nowrap;}
 div.table {
   text-align: center;}
 .ft{
   font-weight: bold;}
 .wid1 {
-  white-space: nowrap;width: 6rem;}
+  width: 6rem;}
 .wid2 {
   width: 28rem;}
 .wid3 {
-  white-space: nowrap;width: 5rem;}
+  width: 5rem;}
 .wid4 {
-  width: 18rem;}
+  }
 

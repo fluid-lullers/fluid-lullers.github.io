@@ -29,14 +29,17 @@ a {
   line-height: 1.5;}
 a:visited {
   color: #00F;}
-a.wd {
-  color: #000;padding: 5px 0;display: block;width: 100%;text-align: center;font-size: 16px;line-height: 1.5;}
+a.noline {
+  color: #00F;font: normal 11px meiryo, sans-serif;margin-top: 1rem;padding: .2rem .5rem;display: inline-block;
+  border: 0px dashed #DDF;text-align: center;}
 a:hover {
   background-color: #39F;color: #FFF;}
 h3 {
   font: bold 18px meiryo, sans-serif;margin: .5rem 0;}
 hr {
   margin: 0;padding: .8rem 0 0 0;}
+img {
+  vertical-align: middle;}
 ul, li{
   list-style-type: none;}
 p {

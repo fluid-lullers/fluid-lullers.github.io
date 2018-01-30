@@ -20,11 +20,18 @@ div.table {
 .ft{
   font-weight: bold;}
 .wid1 {
-  width: 6rem;}
+  width: 5rem;}
 .wid2 {
   width: 26rem;}
 .wid3 {
-  width: 5rem;}
+  font-size: 13px;width: 3rem;}
 .wid4 {
-  width: 18rem;}
-
+  font-size: 13px;width: 12rem;}
+.itb {
+  word-break: break-all;}
+.itc {
+  font-size: 12px;padding: .2rem 0rem;text-align: center;white-space: nowrap;}
+.itd {
+  font-size: 12px;padding: .2rem .4rem;word-break: break-all;}
+.hid0 {
+  visibility: hidden;}

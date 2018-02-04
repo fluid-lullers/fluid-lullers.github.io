@@ -54,10 +54,22 @@ p {
   border-bottom: 1px solid #AAA;border-left: 3px solid #5FF25F;border-top: 1px solid #555;display: block;
   font-weight: bold;line-height: 1;margin: .6rem 0 .3rem 0;padding: .5rem;}
 .blt_gray {width: 90%;
-  border-bottom: 1px solid #AAA;border-left: 3px solid #5FA85F;border-top: 1px solid #555;display: block;
+  border-bottom: 1px solid #AAA;border-left: 3px solid #5FA85F;border-top: 1px solid 555;display:block;
   font-weight: bold;line-height: 1;margin: .6rem 0 .3rem 0;padding: .5rem;}
 .txt {
   margin: 0 1rem;width: 40rem;}
+.marquee {
+  background-color: #FEC;border: 1px solid #AAF;height: 1.5rem;padding: .1rem 0;margin: 12px 0 0 20px;
+  width: 600px;overflow-x: hidden;overflow-y: scroll;}
+.marquee p {
+  animation: marquee 1.8s ease-out 0s 1 normal;font: normal 12px meiryo, sans-serif;
+  line-height: 1.6;margin: 0;padding: .1rem .4rem;}
+    @keyframes marquee {
+  from {margin: 0 0 0 100%;width: 200%;} to {margin: 0%;width: 100%;}}
+.lat1 {
+  float: left;margin: 3px 2rem 0 0;width: 210px;}
+.lat3 {
+  clear: both;display: inline-block;margin: 0;}
 .narrow {
   display: block;font-size: 3px;padding: 0;}
 .rowcol {

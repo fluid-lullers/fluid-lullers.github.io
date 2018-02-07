@@ -12,7 +12,7 @@ span {
 table,td,th {
   border: 1px #5F5F5F solid;border-collapse: collapse;}
 td {
-  text-align: left;padding: .2rem 1rem;}
+  text-align: left;padding: .2rem .8rem;}
 th {
   text-align: center;padding: .2rem .8rem;background-color: #A8F25F;white-space: nowrap;}
 div.table {

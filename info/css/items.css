@@ -9,8 +9,14 @@ p {
   font-weight: bold;line-height: 1.5;}
 span {
   display: inline-block;}
-table,td,th {
-  border: 1px #5F5F5F solid;border-collapse: collapse;}
+td,th {
+  border-right: dashed 1px #CCC;border-collapse: collapse;line-height: 1.71;}
+table,th {
+  border-bottom: solid 1px #333;border-top: solid 1px #333;border-collapse: collapse;}
+td:nth-of-type(4n),th:nth-of-type(4) {
+  border-right: none 0px;}
+tr:nth-of-type(odd) {
+  background-color: #E0FEE0;}
 td {
   text-align: left;padding: .2rem .8rem;}
 th {
@@ -24,14 +30,14 @@ div.table {
 .wid2 {
   width: 26rem;}
 .wid3 {
-  font-size: 13px;width: 3rem;}
+  font-size: 15px;width: 3rem;}
 .wid4 {
-  font-size: 13px;width: 12rem;}
+  font-size: 14px;width: 12rem;}
 .itb {
   word-break: break-all;}
 .itc {
-  font-size: 12px;padding: .2rem 0rem;text-align: center;white-space: nowrap;}
+  font-size: 14px;padding: .2rem 0rem;text-align: center;white-space: nowrap;}
 .itd {
-  font-size: 12px;padding: .2rem .4rem;word-break: break-all;}
+  font-size: 13px;padding: .2rem .4rem;word-break: break-all;}
 .hid0 {
   visibility: hidden;}

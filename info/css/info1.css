@@ -52,11 +52,11 @@ p {
 .black {
   background: #222;color: #FFF;letter-spacing: 0;margin: 4px;padding: 7px;}
 .blt {width: 90%;
-  border-bottom: 1px solid #AAA;border-left: 3px solid #5FF25F;border-top: 1px solid #555;display: block;
-  font-weight: bold;line-height: 1;margin: .6rem 0 .3rem 0;padding: .5rem;}
+  border-bottom: 1px dashed #CCC;border-left: 3px solid #5FF25F;border-top: 1px dashed #CCC;display: block;
+  font-weight: bold;line-height: 1.5;margin: .6rem 0 .3rem 0;padding: .5rem;}
 .blt_gray {width: 90%;
-  border-bottom: 1px solid #AAA;border-left: 3px solid #5FA85F;border-top: 1px solid #555;display: block;
-  font-weight: bold;line-height: 1;margin: .6rem 0 .3rem 0;padding: .5rem;}
+  border-bottom: 1px dashed #CCC;border-left: 3px solid #5FA85F;border-top: 1px dashed #CCC;display: block;
+  font-weight: bold;line-height: 1.5;margin: .6rem 0 .3rem 0;padding: .5rem;}
 .font_reset {
   font: normal 15px meiryo, sans-serif;}
 .font_small {

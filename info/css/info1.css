@@ -11,7 +11,7 @@ div {
 #wrapper {
   background: linear-gradient(126deg, #F25F5F, #F2A85F 4%, #F2A85F 84%, #F2F25F, #5FF2F2, #F25FF2, #F25F5F);
   height: auto !important ;min-height: 100vh;overflow-y: hidden;position: relative;width: 100%;
-  text-align: center;margin: 0 0 -8px 0;}
+  text-align: center;margin: 0 0 -10px 0;}
 #container {
   width: 98%;height: 100%;margin: 0 auto;background: rgba(255, 255, 255, 0.3);}
 #boxA {
@@ -19,7 +19,7 @@ div {
   background: linear-gradient(138deg, #F25F5F, #F2A85F 4%, #F2A85F 84%, #F2F25F, #5FF2F2, #F25FF2, #F25F5F);}
 #boxB {
   width: 94%;padding: 0 1%;margin: 0 1%;float: left;border: #A8A8A8 solid 0;background: #FFFEF0;
-  padding-bottom: 70px;}
+  padding-bottom: 62px;}
 #boxC {
   width: 0%;margin: 0 auto;}
 #boxE {
@@ -29,14 +29,15 @@ div {
   display: block;border-top: 2px solid #F25F5F;}
 a {
   color: #00F;padding: 0 .2rem;display: inline-block;border-bottom: 1px solid #00F;text-decoration: none;
-  line-height: 1.5;}
+  line-height: 1.5;transition: background-color .18s, color .18s, border-radius .36s;}
 a:visited {
   color: #00F;}
 a.noline {
   color: #00F;font: normal 11px meiryo, sans-serif;margin-top: 1rem;padding: .2rem .5rem;display: inline-block;
   border: 0px dashed #DDF;text-align: center;}
 a:hover {
-  background-color: #39F;color: #FFF;}
+  background-color: #39F;color: #FFF;
+  border-radius: 8px;transition: background-color .36s, color .36s;}
 h3 {
   font: bold 18px meiryo, sans-serif;margin: .5rem 0;}
 hr {
@@ -91,9 +92,11 @@ label::after {
   content: "＋ 続きを開く";}
 .menu label {
   border: 1px #00F dashed;color: #00F;cursor: pointer;padding: 3px;z-index: 20;display: inline-block;
-  line-height: 1.5;font-size: 14px;margin: 0 0 .4rem 0;}
+  line-height: 1.5;font-size: 14px;margin: 0 0 .4rem 0;
+  transition: background-color .36s, color .36s, border-radius .36s;}
 .menu label:hover{
-  background-color: #39F;color: #FFF;}
+  background-color: #39F;color: #FFF;
+  border-radius: 15px;transition: background-color .54s, color .54s, border-radius .72s;}
 .menu input[type="checkbox"] {
   display: none;}
 #full iframe {

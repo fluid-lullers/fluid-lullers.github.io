@@ -104,7 +104,7 @@ label::after {
 input[type="checkbox"].on-off:checked + label + ul {
   height: 100%;}
 input[type="checkbox"].on-off:checked ~ ul.rev {
-  height: 0;overflow: hidden;}
+  height: 0;overflow: hidden;position: absolute;top: -200px;}
 input[type="checkbox"].on-off + label + ul {
   height: 0;overflow: hidden;}
 input.on-off:checked + label::after {

@@ -29,7 +29,7 @@ div {
   display: block;border-top: 2px solid #F25F5F;}
 a {
   color: #00F;padding: 0 .2rem;display: inline-block;border-bottom: 1px solid #00F;text-decoration: none;
-  line-height: 1.5;transition: background-color .18s, color .18s, border-radius .36s;}
+  line-height: 1.5;transition: background-color .18s, color .18s, border-radius .18s;}
 a:visited {
   color: #00F;}
 a.noline {
@@ -37,7 +37,7 @@ a.noline {
   border: 0px dashed #DDF;text-align: center;}
 a:hover {
   background-color: #39F;color: #FFF;
-  border-radius: 8px;transition: background-color .36s, color .36s;}
+  border-radius: 8px;transition: background-color .36s, color .36s, border-radius .54s;}
 h3 {
   font: bold 18px meiryo, sans-serif;margin: .5rem 0;}
 hr {

@@ -15,10 +15,10 @@ html {
   position: absolute;bottom: -10px;width: 100%;height: 1.1rem;padding: 10px 0;background: #C1C1C1;clear: both;
   display: block;border-top: 2px solid #F25F5F;}
 .rowcol {
-  width: 35rem;}
+  background: #FFFEFE;width: 35rem;}
 .small {
   width: 1050px;height: 100vh;}
 iframe {
-  margin: 8px 20px 0 20px;transform: scale(.8);transform-origin: 0 0;}
+  margin: 8px 10px -10px 20px;transform: scale(.8);transform-origin: 0 0;}
 #full iframe {
-  height: 50rem;margin:8px 20px -10rem 20px;width: 1050px;}
+  height: 50rem;margin:8px 10px -10rem 20px;width: 1050px;}

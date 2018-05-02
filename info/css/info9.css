@@ -7,10 +7,12 @@ html {
   height: auto !important ;min-height: 100vh;overflow-y: hidden;position: relative;width: 100%;
   text-align: center;margin: 0 0 -10px 0;}
 #container {
-  width: 1050px;height: 100%;margin: 0 auto;background: rgba(255, 255, 255, 0.3);}
+  width: 1050px;height: 100%;margin: 0 auto;background: rgba(255, 255, 255, .3);}
 #boxB {
   width: 88%;padding: 0 1.5%;margin: 0 4.5%;float: left;border: #A8A8A8 solid 0;background: #FFFEF0;
-  padding-bottom: 62px;}
+  padding-bottom: 62px;background-image: radial-gradient(#EFDEA0 2%, rgba(255,255,255,0) 3%),
+  radial-gradient(#EFDEA0 2%, rgba(255,255,255,0) 3%);background-size: 4rem 4rem;
+  background-position: 0 0, 2rem 2rem;}
 #footer {
   position: absolute;bottom: -10px;width: 100%;height: 1.1rem;padding: 10px 0;background: #C1C1C1;clear: both;
   display: block;border-top: 2px solid #F25F5F;}

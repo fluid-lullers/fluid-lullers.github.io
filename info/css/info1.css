@@ -13,7 +13,7 @@ div {
   height: auto !important ;min-height: 100vh;overflow-y: hidden;position: relative;width: 100%;
   text-align: center;margin: 0 0 -10px 0;}
 #container {
-  width: 98%;height: 100%;margin: 0 auto;background: rgba(255, 255, 255, 0.3);}
+  width: 98%;height: 100%;margin: 0 auto;background: rgba(255, 255, 255, .3);}
 #boxA {
   color: #F2F2A8;font-weight: bold;font-size: 16px;border-bottom: 2px solid #5F5FF2;width: 98%;padding: 0.3% 1%;
   background: linear-gradient(138deg, #F25F5F, #F2A85F 4%, #F2A85F 84%, #F2F25F, #5FF2F2, #F25FF2, #F25F5F);}
@@ -41,7 +41,7 @@ a:hover {
 h3 {
   font: bold 18px meiryo, sans-serif;margin: .5rem 0;}
 hr {
-  margin: 0;padding: .8rem 0 0 0;}
+  margin: 0;padding: .8rem 0 0 0;box-shadow: 0 -1px rgba(48, 48, 48, .1);}
 img {
   vertical-align: middle;}
 ul, li{
@@ -54,10 +54,12 @@ p {
   background: #222;color: #FFF;letter-spacing: 0;margin: 4px;padding: 7px;}
 .blt {width: 90%;
   border-bottom: 1px dashed #CCC;border-left: 3px solid #5FF25F;border-top: 1px dashed #CCC;display: block;
-  font-weight: bold;line-height: 1.5;margin: .6rem 0 .3rem 0;padding: .5rem;}
+  font-weight: bold;line-height: 1.5;margin: .6rem 0 .3rem 0;padding: .5rem;
+  box-shadow: 2px 2px 8px 1px rgba(48, 48, 48, .1);}
 .blt_gray {width: 90%;
   border-bottom: 1px dashed #CCC;border-left: 3px solid #5FA85F;border-top: 1px dashed #CCC;display: block;
-  font-weight: bold;line-height: 1.5;margin: .6rem 0 .3rem 0;padding: .5rem;}
+  font-weight: bold;line-height: 1.5;margin: .6rem 0 .3rem 0;padding: .5rem;
+  box-shadow: 2px 2px 8px 1px rgba(48, 48, 48, .1);}
 .font_reset {
   font: normal 15px meiryo, sans-serif;}
 .font_small {
@@ -95,7 +97,8 @@ label::after {
 .menu label {
   border: 1px #00F dashed;color: #00F;cursor: pointer;padding: 3px;z-index: 20;display: inline-block;
   line-height: 1.5;font-size: 14px;margin: 0 0 .4rem 0;
-  transition: background-color .36s, color .36s, border-radius .36s;}
+  transition: background-color .36s, color .36s, border-radius .36s;
+  box-shadow: 3px 3px 8px 2px rgba(128, 128, 255, .3);}
 .menu label:hover{
   background-color: #39F;color: #FFF;
   border-radius: 15px;transition: background-color .54s, color .54s, border-radius .72s;}
@@ -114,4 +117,9 @@ input.on-off:checked + label::after {
 ::selection {
   background: #39F;color: #FFF;}
 
-
+.col_cen {border: 1px #333 dashed;column-count: 2;column-rule: solid #888 1px;
+  line-height: 1.84;margin: .5rem;padding: 1rem;height: auto;width: 99%;}
+.col_cen p {break-after: column;break-inside: avoid-column;margin: 2px;font-size: 15px;
+  line-height: 1.84;padding: 2px;}
+.hid0 {
+  visibility: hidden;}
